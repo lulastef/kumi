@@ -76,7 +76,7 @@
     </link>
 
     <joint name="realsense_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="-0.025 0 -0.057" rpy="0 0 3.14159"/>
         <parent link="front_leg"/>
         <child link="realsense"/>
     </joint>
@@ -106,7 +106,7 @@
 
     <gazebo reference="realsense">
         <sensor name="realsense" type="rgbd_camera">
-            <pose>-0.025 0 -0.057 0 0 3.14159</pose>
+            <pose>0 0 0 0 0 0</pose>
             <always_on>1</always_on>
             <update_rate>100</update_rate>
             <topic>/d435_rgbd</topic>
